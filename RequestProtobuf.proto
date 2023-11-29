@@ -1,0 +1,18 @@
+syntax="proto3";
+package protobuf;
+// struct RequestMsg
+// {
+// 	//1 密钥协商  	//2 密钥校验; 	// 3 密钥注销
+//     int		cmdType;		// 报文类型
+// 	char	clientId[12];	// 客户端编号
+// 	char	authCode[65];	// 认证码
+// 	char	serverId[12];	// 服务器端编号 
+// 	char	r1[64];			// 客户端随机数
+// };
+message RequestProtobuf{
+    int32 cmdType = 1;
+    bytes clientId = 2;
+    bytes sign = 3;
+    bytes serverId = 4;
+    bytes data = 5;
+}

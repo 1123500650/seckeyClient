@@ -1,0 +1,10 @@
+syntax="proto3";
+package protobuf;
+
+message RespondProto{
+    int32 stauts = 1;
+    bytes clientId = 2;
+    bytes serverId = 3;
+    bytes data = 4;
+    int32 seckeyId = 5;
+}
